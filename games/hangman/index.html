@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangeman</title>
+	<script type="text/javascript" src="/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css.css">
+	<meta charset="utf-8">
+
+	<style>
+		#keyboard {
+			text-align: center;
+		}
+		.letter {
+			font-size: 4.5vw;
+			text-align: center;
+			border: none;
+		}
+	</style>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="row" id="computer">
+		<div class="head">
+			<h2>Hangman</h2>
+		</div>
+		<div class="col-6 col-s-6 aside">
+			<ul class="menu">
+				<li onclick="neword(pickWord(words))">New word</li>
+				<li onclick="makeWord()">Make word</li>
+			</ul>
+			<h3>Lives: <span class="lives">11</span></h3>
+			<h3>Tries: <span class="tries">0</span></h3>
+		</div>
+		<div class="col-6 col-s-6 aside">
+			<h2 class="word"></h2>
+			<h2 class="word-show"></h2>
+		</div>
+		<div class="col-3 col-s-3 aside ">
+			On screen Keyboard:
+			<label class="switch">
+				<input type="checkbox" checked id="kbs" onchange="$('#keyboard').toggle('slow')">
+				<span class="slider"></span>
+			</label>
+		</div>
+		<div class="col-11 col-s-9 aside" id="keyboard"></div>
+		<div class="col-12 col-s-12 aside">
+			<h3>Letters already used:</h3>
+			<ul id="words-picked"></ul>
+		</div>
+	</div>
+	<div class="foot">
+		<h2>Eric Diskin | 2018</h2>
+	</div>
+	<script type="text/javascript" src="words.js"></script>
+	<script type="text/javascript">
+		var	currentWord = null, pickedLetters = [], alpha = [
+			'a',
+			'b',
+			'c',
+			'd',
+			'e',
+			'f',
+			'g',
+			'h',
+			'i',
+			'j',
+			'k',
+			'l',
+			'm',
+			'n',
+			'o',
+			'p',
+			'q',
+			'r',
+			's',
+			't',
+			'u',
+			'v',
+			'w',
+			'x',
+			'y',
+			'z'
+		], lives = 9, hiddenWord = [], tries = 0, pickable = true;
+		function pickWord(arr) {
+			return arr[Math.floor(Math.random() * arr.length)];
+		}
+		function makeWord() {
+			neword(prompt('Choose your word','cheese'));
+		}
+		function convertText(word) {
+			var str = '';
+			for (var i = 0; i < word.length; i++) {
+				if(word[i] == ' ') {
+					str += ' \xa0\xa0\xa0 ';
+				} else {
+					str += ' \xa0_\xa0 ';
+				}
+			}
+			return str;
+		}
+		function inAlpha(let) {
+			for (var i = 0; i < alpha.length; i++) {
+				if (alpha[i] == let) {
+					return true;
+				}
+			}
+			return false;
+		}
+		function isLetter(letter) {
+			letter = String.fromCharCode(letter);
+			var pat = new RegExp(letter);
+			if (pickable) {
+				if (pat.test(currentWord.join()) && !picked(letter) && inAlpha(letter)) {
+					// correct letter
+					tries++;
+					for (var i = 0; i < currentWord.length; i++) {
+					 	if (currentWord[i] == letter) {
+					 		hiddenWord[i] = letter;
+					 		$('.word').html(hiddenWord.join(' \xa0\xa0'));
+					 	}
+					}
+				} else if (!picked(letter) && inAlpha(letter)) {
+					tries++;
+					lives--;
+				}
+				if (lives == 0) {
+					$('.word').html('you lost. the word was ' + currentWord.join(''));
+					pickable = false;
+				}
+				$('.tries').html(tries);
+				$('.lives').html(lives);
+				if (hiddenWord.join() == currentWord.join()) {
+					$('.word').html('you won! the word(s) was "' + currentWord.join('') + '"');
+					pickable = false;
+				}
+				pickedLetters.push(letter);
+			}
+		}
+		function picked(let) {
+			for (var i = 0; i < pickedLetters.length; i++) {
+				if (pickedLetters[i] == let) {
+					return true;
+				}
+			}
+			var e = $('<li>');
+			e.html(let);
+			$('#words-picked').append(e);
+			return false;
+		}
+		// fromCharCode(KEYDCODE);
+		function getHiddenWord() {
+			var arr = [];
+			for (var i = 0; i < currentWord.length; i++) {
+				if(currentWord[i] == ' ') {
+					arr.push(' ')
+				} else {
+					arr.push('_');
+				}
+			}
+			return arr;
+		}
+		function neword(word) {
+			currentWord = word.toLowerCase().split('');
+			hiddenWord = getHiddenWord();
+			$('.word').text(convertText(word));
+			pickedLetters = [];
+			$('#words-picked').text('');
+			pickable = true;
+			lives = 11;
+			tries = 0;
+			$('.tries').text(tries);
+			$('.lives').text(lives);
+			//$('.word-show').text(word);
+		}
+		neword(pickWord(words));
+		$('body').on('keypress',function(e) {
+			isLetter(e.keyCode);
+		});
+		$('.foot').css('margin',50+'px');
+		$('.foot').css('padding','100px');
+		$('.row').css('margin','10px');
+		$('.row').css('font-size', 1.5 + 'em');
+		$('ul').css('list-style-type','inside');
+		function procLet(e) {
+			isLetter(e.charCodeAt(0))
+		}
+		for (var i = 0; i < alpha.length; i++) {
+			const l = alpha[i];
+
+			$('#keyboard')
+			.append(`<button class="letter aside" onclick="procLet('${l}');">${l}</button>`)
+		}
+		if(window.innerWidth > 768) {
+			$('#keyboard').hide(0)
+			$('#kbs')[0].checked = false;
+		}
+	</script>
+</body>
+</html>

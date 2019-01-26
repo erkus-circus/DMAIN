@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/h5c.js"></script>
+</head>
+<body>
+    <p class="p">
+        0
+    </p>
+    <canvas width="1000" height="1000"></canvas>
+
+    <script>
+        var canv = new Canvas($('canvas'),60,function() {
+            canv.style('rgb(0,255,0)')
+            canv.fillRect(0,0,canv.width, canv.height)
+        }), score = 0;
+        $('canvas').width(window.innerWidth).height(window.innerHeight);
+        var p1 = new Player(30, 30, { speed: 400, accelSpeed: 100, width: 500, height: 50, upCode: null, downCode: null, color: 'rgb(255,0,0)' }, 'p1'), // top
+
+            p2 = new Player(800, 800, { speed: 400, width: 500, height: 50, upCode: null, downCode: null, leftCode: 37, rightCode: 39, onCollide: function(e) {
+                score++;
+                e.flags.xSpeed -= 100;
+                $('p').html(score)
+            } }, 'p2'), // bottom
+            
+            ball = new Player(500,500, {color: 'rgb(0,100,255)', width: 100, xSpeed: 100, height: 100, keys: false, autoMove: true, ySpeed: 100, bounce: 1.05, collidesWith: [p1,p1], onCollide: function(e) {} }, 'ball');
+
+        p1.addCollider([ball])
+        p2.addCollider([ball])
+
+        canv.world.push(p1, p2, ball)
+        canv.beginEngine()
+    </script>
+</body>
+</html>

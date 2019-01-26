@@ -1,0 +1,179 @@
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I am awesome</title>
+	<script type="text/javascript" src="/jquery.js"></script>
+	<style type="text/css">
+		body {
+			background-color: black;
+			margin: 0;
+			overflow: hidden;
+		}
+		canvas {
+			margin: 0;
+			position: absolute;
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<canvas>
+			Upgrade your browser, Bro
+		</canvas>
+		<script type="text/javascript">
+			(function(window,document){
+				var text = {
+					text: 'Bouncing balls',
+					color: 'black',
+					sideColor: 'white'
+				}, canvas, c, balls = [], playing = false,ltc,fps,timeElapsed = 0,time, ttime = 0, strokeColor = 'black';
+				function randomColor() {
+					return 'rgba(' + Math.floor(Math.random() * 256) + ', ' + Math.floor(Math.random() * 256) + ', ' + Math.floor(Math.random() * 256) + ', ' + Math.random() + ')';
+				}
+				function draw() {
+					window.requestAnimationFrame(draw);
+					if(!ltc) { 
+				    	ltc = Date.now();
+				    	fps = 0;
+				    	return;
+				    }
+					d = (Date.now() - ltc)/1000;
+					ltc = Date.now();
+					fps = 1/d;
+					canvas.width = window.innerWidth - 1;
+					canvas.height = window.innerHeight - 1;
+					text.x = window.innerWidth/2;
+					text.y = window.innerHeight/2;
+					c.clearRect(0,0,canvas.width,canvas.height);
+					for (var i = 0; i < balls.length; i++) {
+						balls[i].update();
+					}
+					c.font = (window.innerWidth + window.innerHeight) / 40 + 'px sans-serif';
+					c.fillStyle = text.color;
+					c.strokeStyle = text.sideColor;
+					c.save();
+					c.globalAlpha = 0.4;
+					c.fillText(text.text,canvas.width/2.5,canvas.height/2);
+					c.strokeText(text.text,canvas.width/2.5,canvas.height/2);
+					c.font = (window.innerWidth + window.innerHeight) / 80 + 'px sans-serif';
+					c.fillText('Balls: ' + balls.length,canvas.width/2.5,canvas.height/1.5);
+					c.strokeText('Balls: ' + balls.length,canvas.width/2.5,canvas.height/1.5);
+					c.fillText('FPS: ' + Math.round(fps), canvas.width/2.5, canvas.height/1.7);
+					c.strokeText('FPS: ' + /*Math.round*/(fps), canvas.width/2.5, canvas.height/1.7);
+					c.fillText('Time elapsed: ' + timeElapsed,canvas.width/2.5,canvas.height/1.4);
+					c.strokeText('Time elapsed: ' + timeElapsed,canvas.width/2.5,canvas.height/1.4);
+					c.restore();
+				}
+				function Circle(x,y,color,dx,dy,radius,gravity) {
+					this.x = x;
+					this.y = y;
+					this.color = color;
+					this.dx = dx;
+					this.dy = dy;
+					this.radius = radius;
+					this.gravity = gravity;
+					if (this.x + this.radius <= 0) {
+						this.x += (this.radius + canvas.width / 4);
+					} else if (this.x + this.radius >= canvas.width) {
+						this.x -= (this.radius + canvas.width / 4);
+													balls.push(new Circle(
+						 Math.random()*canvas.width,
+						 Math.random()*canvas.height - canvas.height*0.75,
+						 randomColor(),
+						 (Math.floor(Math.random()*2)+1 == 1) ? Math.random()*4:-Math.random()*4,
+						 1,
+						 Math.random()*((window.innerWidth+window.innerHeight)/40)+1,
+						 1)
+						); // !!!DO NOT LEAVE ON UNATENDED!!!
+					}
+					this.update = function() {
+						if (this.radius + this.y > canvas.height) {
+							this.dy = -this.dy * .8;
+						} else {
+							this.dy += this.gravity;
+						}
+						if (this.radius + this.x + this.dx > canvas.width || this.x - this.radius < 0) {
+							this.dx = -this.dx;
+						}
+						//this.x += this.dx;
+						this.y += this.dy;
+						this.draw();
+					};
+					this.draw = function() {
+						c.beginPath();
+						c.fillStyle = this.color;
+						c.strokeStyle = strokeColor;
+						c.arc(this.x,this.y,this.radius,Math.PI*2,0);
+						c.fill();
+						c.stroke();
+					//	console.log('s');
+						c.closePath();
+					};
+				}
+				function randomInt(from,to) {
+					var num = Math.floor(Math.random()*to)-from;
+					return num;
+				}
+				window.onload = function() {
+					window.requestAnimationFrame(draw);
+					canvas = $('canvas')[0];
+					window.addEventListener('click', restart);
+					window.addEventListener('touchstart',restart);
+					c = canvas.getContext('2d');
+					restart();
+					window.addEventListener('keydown',function(e) {
+						var cd = e.keyCode || e.wich;
+						if (cd == 49 && !e.shiftKey) {
+							for (var i = 0; i < 10; i++) {
+								balls.shift();
+							}
+						} else if (cd == 49 && e.shiftKey) {
+							balls.shift();
+						} else if (cd == 82 && e.shiftKey) {
+							balls = balls.splice(0,10);
+						}
+					},true);
+					window.addEventListener('dblclick',function() {
+						if (canvas.style.backgroundColor == 'white') {
+							canvas.style.backgroundColor = 'black';
+							strokeColor = 'white';
+						} else {
+							canvas.style.backgroundColor = 'white';
+							strokeColor = 'black';
+						}
+					});
+				};
+				function restart() {
+					canvas.width = window.innerWidth - 1;
+					canvas.height = window.innerHeight - 1;
+					balls = [];
+					text.x = window.innerWidth/2;
+					text.y = window.innerHeight/2;
+					//Circle(x,y,color,dx,dy,radius,gravity)
+					for (var i = 0; i < 250; i++) {
+						balls.push(new Circle(
+						 Math.random()*canvas.width,
+						 Math.random()*canvas.height - canvas.height*0.75,
+						 randomColor(),
+						 (Math.floor(Math.random()*2)+1 == 1) ? Math.random()*4:-Math.random()*4,
+						 1,
+						 Math.random()*((window.innerWidth+window.innerHeight)/50)+1, 
+						 1)
+						);
+					}
+					timeElapsed = 0;
+					clearInterval(time);
+					time = setInterval(function() {
+						timeElapsed++;
+						console.log(timeElapsed);
+					},1000);
+					text.color = 'black';
+					console.log(balls);
+				}
+			})(window,document);
+		</script>
+	</div>
+</body>
+</html>

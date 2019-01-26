@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/h5c.js"></script>
+    <title>Open World Game</title>
+</head>
+<body>
+    <canvas class="canv"></canvas>
+
+    <script> 
+        // OPEN WORLD GAME
+        var canv = $('.canv')
+        
+        function World(canv) {
+            this.world = [];
+            this.canv = canv;
+            this.c = canv.getContext('2d');
+        }
+
+        new World(canv[0]).load().then(function() {
+            this.beginLoop()
+        });
+
+
+        
+    </script>
+    
+</body>
+</html>
