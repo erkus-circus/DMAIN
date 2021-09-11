@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bird Race</title>
+	<link rel="stylesheet" type="text/css" href="erklib/grid-birdRace.css">
+	<script type="text/javascript" src="erklib/perkus-birdRace.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="icon" type="image/png" href="images/logos/logo16X16.png">
+</head>
+<body>
+	<div class="row">
+		<div class="head">
+			<h1>Bird Race</h1>
+		</div>
+		<div class="col-6 col-s-4">
+			<img src="images/bird/bird-flying.png">
+		</div>
+		<div class="col-6 col-s-8 aside">
+			<h3>Bird Race</h3>
+			<p>Bird race is a super fun, entertaining game where you have to feed and gro a bird to in a lot of races.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3 col-s-3 wordpad-div">
+			<h2>Wordpad</h2>
+			<p id="wordpad"></p>
+		</div>
+		<div class="col-7 col-s-7 canvas">
+			<canvas width="700" height="500">Upgrade your browser to play.</canvas>
+		</div>
+		<div class="col-2 col-s-2 logs-div">
+			<h2 id="top-logs">Logs</h2>
+			<button onclick="_.find('#logs').innerHTML = ''; log('cleared logs','WARN'); console.clear();">clear</button>
+			<p id="logs"></p>
+		</div>
+	</div>
+	<div id="imgs">
+		<img src="images/stage_1/red-block.png" id="red-block">
+		<img src="images/stage_1/grapes.png" id="grapes">
+		<img src="images/training/speed/block.png" id="water-speed-obstic">
+	</div>
+	<div class="foot">
+		<h2>Eric Diskin | 2018 | Not for use in school</h2>
+	</div>
+</body>
+</html>

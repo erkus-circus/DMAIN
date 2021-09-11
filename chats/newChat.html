@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PurpleMessage - Accounts & DMS In the Works!</title>
+        <link rel="stylesheet" href="./messageBox.css">
+        <link rel="stylesheet" href="./messages.css">
+        <script src="/js/lib/_erklib.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="./messageBox.js"></script>
+    </head>
+    <body>
+        <!-- Taken from drawster -->
+        <div class="outer-msg-box" id="outer-msg-box">
+            <div class="msg-box" id="msg-box">
+                <span class="msg-title" id="msg-title"></span>
+                <div class="msg-content" id="msg-content"></div>
+                <div class="msgbox-inputs msg-inputs" id="msg-inputs"></div>
+                <div class="msg-btns" id="msg-btns"></div>
+            </div>
+        </div>
+
+        <div class="outer-msg-box" id="create-chat-box" style="display: block;">
+            <div class="msg-box">
+                <div class="msg-content"></div>
+                <div id="users-selected"></div>
+                <form action="javascript:void(0)" id="add-user-form">
+                    <div class="msg-inputs" style="display: inline;">
+                        <input list="users-list" class="msg-input" id="add-user-input" style="display: inline;">
+                    </div>
+                    <button class="msg-btn" style="display: inline;" type="submit">Add User</button>
+                </form>
+                <datalist id="users-list"></datalist>
+                <div class="msg-btns">
+                    <button class="msg-btn" id="cancel-create-chat">Cancel</button>
+                    <button class="msg-btn">Create</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="side-btns">
+            <button id="logOutButton" class="msg-btn side-button">Log Out</button>
+            <!-- <button id="chatInfoButton" class="msg-btn side-button">Chat info</button> -->
+            <button id="newChatButton" class="msg-btn side-button">New Chat</button>
+            <a href="/gm/chats/"><button id="stableChatButton" class="msg-btn side-button">Stable Build</button></a>
+        </div>
+        
+        <div class="chats-menu">
+        </div>
+        
+        <div id="messages">
+            <h1 style="color:aliceblue">Click a chat in the sidebar to view and send messages.</h1>
+        </div>
+
+        <form id="message-form" action="javascript:void(0);" autocomplete="off">
+            <input type="text" class="msg-inputs" placeholder="PurpleMessage" id="message-input" />
+            <button id="send-message" class="msg-btn" type="submit">Send!</button>
+        </form>
+        
+        <div id="peopleOnlineDisplay"></div>
+
+        <div id="nameDisplay"></div>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./account.js"></script>
+        <script src="./newChat.js"></script>
+    </body>
+</html>

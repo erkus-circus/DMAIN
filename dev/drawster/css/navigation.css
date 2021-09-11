@@ -1,0 +1,65 @@
+/* /css/navigation.css */
+.nav-bar {
+    width: 100%;
+    margin: 0;
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background:
+        /*NAV:BACKGROUND*/
+        rgb(27, 27, 27);
+    top: 0;
+    right: 0;
+}
+
+.nav-bar>.nav-menu {
+    display: inline;
+    border: none;
+    z-index: 100;
+}
+
+.nav-dropdown {
+    width: fit-content;
+    display: inline-block;
+    padding-left: 5px;
+    z-index: 100;
+    margin: 0;
+    padding-right: 5px;
+    color:
+        /*NAV:COLOR*/
+        #fff;
+}
+
+.nav-dropdown:hover {
+    background:
+        /*NAV:FOCUS*/
+        rgb(82, 82, 82);
+}
+
+.nav-button {
+    display: block;
+    padding: 3px;
+}
+
+.nav-button:hover {
+    background:
+        /*NAV:FOCUS*/
+        rgb(82, 82, 82);
+}
+
+.nav-menu {
+    display: none;
+    width: max-content;
+    z-index: 100;
+    position: relative;
+    border: 1px solid
+        /*NAV:BORDER*/
+        #fff;
+    border-collapse: separate;
+    background-color: rgb(27, 27, 27);
+}
+
+.nav-dropdown:hover>.nav-menu {
+    display: block;
+    position: absolute;
+}

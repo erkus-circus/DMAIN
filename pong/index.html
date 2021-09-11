@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    canvas {
+        display: block;
+        margin: auto;
+    }
+</style>
+<body>
+<canvas id="ctx" width="700" height="500" style="border:1px solid #000000;"></canvas>
+<!--Eric also added this button in 2021-->
+<button id="reset-btn">Reset</button>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var ctx = document.getElementById("ctx").getContext("2d"), points = {
+        left: 0,
+        right: 0
+    };
+
+    const $ = (id) => document.getElementById(id);
+
+    var socket = io("/pongGame");
+    socket.on('newPositions', function (data) {
+        ctx.clearRect(0, 0, 700, 500);
+        for (var i = 0; i < data.length; i++)
+            if (i % 2 == 0) {
+                ctx.fillRect(10, data[i].y, 10, 110);
+            }else{
+                ctx.fillRect(680, data[i].y, 10, 110);
+            }
+            ctx.fillRect(data.x, data.y, 10, 10);
+    });
+    socket.on('ballpos', function (data) {
+            //ctx.clearRect(0, 0, 700, 500);
+            ctx.fillRect(data.x, data.y, 10, 10);
+        });
+
+    document.onkeydown = function (event) {
+        if (event.keyCode === 83)   //s
+            socket.emit('keyPress', { inputId: 'down', state: true });
+        else if (event.keyCode === 87) // w
+            socket.emit('keyPress', { inputId: 'up', state: true });
+
+    }
+    document.onkeyup = function (event) {
+        if (event.keyCode === 83)   //s
+            socket.emit('keyPress', { inputId: 'down', state: false });
+        else if (event.keyCode === 87) // w
+            socket.emit('keyPress', { inputId: 'up', state: false });
+    }
+
+    /*Eric Made this in 2021, for his server.*/
+    document.getElementById("reset-btn").addEventListener("click", function() {
+        socket.emit("reset-game");
+    })
+    /* End of what eric Added. He did not touch anyting else in this file*/
+
+    // ERICS CODE DONT TOUCH
+    // ik u dont know what u r doing here so LEAVE.
+
+    function tPos(evt) {
+
+        var canv = $('ctx')
+
+        var rect = canv.getBoundingClientRect(), // abs. size of element
+            scaleX = canv.width / rect.width,    // relationship bitmap vs. element for X
+            scaleY = canv.height / rect.height;  // relationship bitmap vs. element for Y
+
+        if (evt.touches) {
+            return {
+                x: (evt.touches[0].clientX - rect.left) * scaleX,   // scale mouse coordinates after they have
+                y: (evt.touches[0].clientY - rect.top) * scaleY     // been adjusted to be relative to element
+            }
+        } else {
+            return {
+                x: (evt.clientX - rect.left) * scaleX,   // scale mouse coordinates after they have
+                y: (evt.clientY - rect.top) * scaleY     // been adjusted to be relative to element}
+            }
+        }
+    }
+
+    socket.on('point',(points)=>{
+        ctx.font = "30px Arial";
+        var text = `${points.left}:${points.right}`;
+        var tw = ctx.measureText(text).width; // the text width
+
+        ctx.fillText(text, 700/2 - tw, 500/2)
+        
+    });
+
+    function move(e) {
+        e.preventDefault()
+        e.stopPropagation()
+        
+        var pos = tPos(e);
+        socket.emit('touch move',pos);
+    }
+    
+    $('ctx').ontouchstart = move;
+    $('ctx').ontouchmove = move;
+    $('ctx').onmousemove = move;
+    $('ctx').ontouchend = move;
+
+    function resize() {
+        // Our canv must cover full height of screen
+        // regardless of the resolution
+        var height = window.innerHeight;
+        var canv = $('ctx')
+        // So we need to calculate the proper scaled width
+        // that should work well with every resolution
+        var ratio = canv.width / canv.height//http://192.168.1.160:2000/client/index.htmlheight;
+        var width = height * ratio;
+        canv.style.width = width * .66 + 'px';
+        canv.style.height = height * .66 + 'px';
+    }
+
+    window.onload = resize;
+    window.onresize = resize; 
+</script>
+</body>
+</html>

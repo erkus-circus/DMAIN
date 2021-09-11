@@ -1,0 +1,258 @@
+.layer-canvas {
+    border: 1px solid black;
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    left: 50%;
+    width: 500px;
+    margin: auto;
+}
+
+.all-canvases {
+    z-index: 0;
+    color: white;
+    cursor: none;
+    display: block;
+    padding: 0;
+}
+
+.top-canvas {
+    z-index: 99;
+    background-color: transparent;
+}.layer-editor-wrapper {
+    
+    margin-top: 18px;
+}
+
+.layer-box {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    color: gray;
+    z-index: 60;
+    border-top: 1px solid white;
+}
+
+.layer-button {
+    padding-left: 5px;
+    margin-left: 2px;
+}
+
+.layer-button:hover {
+    color: white;
+}
+
+.layer-buttons {
+    display: inline;
+    margin-right: 5px;
+}
+
+.layer-name {
+    overflow: auto;
+}
+
+.toggle-layer {
+    display: inline;
+}
+
+.layer-selected {
+    color: white;
+    font-weight: bold;
+}body {
+    font-family: 'Comfortaa', cursive;
+    overflow: auto;
+    margin: 0;
+    background-color: rgb(29, 20, 20);
+    background-image: linear-gradient(rgb(29, 20, 20),rgb(21, 15, 30));
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+}
+
+:not(input) {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}.outer-msg-box {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    height: 100%;
+    font-size: x-large;
+}
+
+[class^=msg-box] {
+    padding: 6px;
+    text-align: center;
+}
+
+.msg-input {
+    display: block;
+}
+
+.msg-box {
+    background-color: rgb(32, 32, 32);
+    width: fit-content;
+    color: white;
+    max-width: 25%;
+    display: block;
+    margin: 15% auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.msg-inputs input {
+    font-size: x-large;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.msg-title {
+    background-color: rgb(95, 95, 95);
+    width: 100%;
+    padding: 5px 0;
+    font-size: xx-large;
+    font-weight: bold;
+    display: block;
+}
+
+.msg-content {
+    padding: 1px;
+    text-align: center;
+    display: block;
+    padding-top: 17px;
+    overflow-wrap: normal;
+    margin: 5px auto;
+}
+
+.msg-btns {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 17px;
+    width: max-content;
+}
+
+.msg-btn {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.msg-btn:hover {
+    background: grey;
+}
+
+.msg-btn:active {
+    background: lightgrey;
+}/* /css/navigation.css */
+.nav-bar {
+    width: 100%;
+    margin: 0;
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background:
+        /*NAV:BACKGROUND*/
+        rgb(27, 27, 27);
+    top: 0;
+    right: 0;
+}
+
+.nav-bar>.nav-menu {
+    display: inline;
+    border: none;
+    z-index: 100;
+}
+
+.nav-dropdown {
+    width: fit-content;
+    display: inline-block;
+    padding-left: 5px;
+    z-index: 100;
+    margin: 0;
+    padding-right: 5px;
+    color:
+        /*NAV:COLOR*/
+        #fff;
+}
+
+.nav-dropdown:hover {
+    background:
+        /*NAV:FOCUS*/
+        rgb(82, 82, 82);
+}
+
+.nav-button {
+    display: block;
+    padding: 3px;
+}
+
+.nav-button:hover {
+    background:
+        /*NAV:FOCUS*/
+        rgb(82, 82, 82);
+}
+
+.nav-menu {
+    display: none;
+    width: max-content;
+    z-index: 100;
+    position: relative;
+    border: 1px solid
+        /*NAV:BORDER*/
+        #fff;
+    border-collapse: separate;
+    background-color: rgb(27, 27, 27);
+}
+
+.nav-dropdown:hover>.nav-menu {
+    display: block;
+    position: absolute;
+}.sidebar {
+    width: fit-content;
+    z-index: 61;
+
+    max-width: 25%;
+    margin-right: 10px;
+    padding-right: 10px;
+    position: relative;
+    display: inline-block;
+    /*SIDEBAR:BACKGROUND*/
+    background: rgb(17, 0, 0);
+
+    color:
+        /*SIDEBAR:COLOR*/
+        #fff;
+
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

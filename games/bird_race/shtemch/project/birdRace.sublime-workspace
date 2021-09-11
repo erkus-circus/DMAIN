@@ -1,0 +1,931 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bird",
+				"bird-walking.png\t(main.html)"
+			],
+			[
+				"img",
+				"img-div\t(main.html)"
+			],
+			[
+				"bir",
+				"bird-walking.png\t(main.html)"
+			],
+			[
+				"ima",
+				"images\t(main.html)"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"m",
+				"mse"
+			],
+			[
+				"do",
+				"document\t(perkus-birdRace.js)"
+			],
+			[
+				"ty",
+				"type"
+			],
+			[
+				"mse",
+				"msePos"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
+				"upd",
+				"updates"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"new",
+				"newPos"
+			],
+			[
+				"pro",
+				"prog"
+			],
+			[
+				"o",
+				"o:f\tObject Method"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"col",
+				"col-2"
+			],
+			[
+				"type",
+				"typeof\t(perkus-birdRace.js)"
+			],
+			[
+				"u",
+				"url()\tbackground-image"
+			],
+			[
+				"back",
+				"background-image\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"h",
+				"height\tAttr"
+			],
+			[
+				"ca",
+				"canvas\tTag"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"tex",
+				"text-decoration-line\tproperty"
+			],
+			[
+				"font-",
+				"font-style\tproperty"
+			],
+			[
+				"font",
+				"font-kerning\tproperty"
+			],
+			[
+				"a",
+				"auto\twidth"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"se",
+				"set"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"br",
+				"brush"
+			],
+			[
+				"sha",
+				"shadow-controls"
+			],
+			[
+				"on",
+				"onchange\tAttr"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"shadow",
+				"shadow-mode"
+			],
+			[
+				"bl",
+				"blur"
+			],
+			[
+				"cha",
+				"changeBlur"
+			],
+			[
+				"ox",
+				"shadowOffsetX"
+			],
+			[
+				"chang",
+				"changeOFF"
+			],
+			[
+				"ov",
+				"overflow-y\tproperty"
+			],
+			[
+				"of",
+				"offX"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"he",
+				"head"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"we",
+				"webkit-grab"
+			],
+			[
+				"f",
+				"f\tAnonymous Function"
+			],
+			[
+				"fro",
+				"for-ashten"
+			],
+			[
+				"bord",
+				"border-bottom\tproperty"
+			],
+			[
+				"lis",
+				"list-style-type\tproperty"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"line",
+				"lineWidth"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"gl",
+				"globalAlpha"
+			],
+			[
+				"cl",
+				"closePath"
+			],
+			[
+				"v",
+				"very"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"can",
+				"canvas"
+			],
+			[
+				"ol",
+				"oldImage"
+			],
+			[
+				"no",
+				"upper-norwegian"
+			],
+			[
+				"be",
+				"beginPath"
+			],
+			[
+				"size",
+				"size"
+			],
+			[
+				"chan",
+				"changeMode"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"inn",
+				"innerHeight"
+			],
+			[
+				"siz",
+				"size-y"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"res",
+				"resizeCanvas"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"col-",
+				"col-s-3"
+			],
+			[
+				"fi",
+				"find"
+			],
+			[
+				"era",
+				"erase"
+			],
+			[
+				"tra",
+				"Transparency"
+			],
+			[
+				"ers",
+				"erase"
+			],
+			[
+				"to",
+				"toggleSwitch"
+			],
+			[
+				"er",
+				"erase"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"draw",
+				"drawImage"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"bru",
+				"brush"
+			],
+			[
+				"mou",
+				"mousedown"
+			],
+			[
+				"onmo",
+				"onmousemove\tAttr"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"brus",
+				"brush"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"com",
+				"comic-sans"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"boe",
+				"border-box"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"docu",
+				"document"
+			],
+			[
+				"i",
+				"if\tif"
+			],
+			[
+				"st",
+				"sticky"
+			],
+			[
+				"ovef",
+				"overflow-y"
+			],
+			[
+				"overf",
+				"overflow-x"
+			],
+			[
+				"html",
+				"html:5\thtml5"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"hover",
+				"hover-color\t(grid.css)"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"blck",
+				"black\t(grid.css)"
+			],
+			[
+				"bro",
+				"border-radius"
+			],
+			[
+				"wit",
+				"white\t(grid.css)"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"fil",
+				"fillStyle"
+			],
+			[
+				"pa",
+				"placeholder\tAttr"
+			],
+			[
+				"id",
+				"id\tAttr"
+			],
+			[
+				"colo",
+				"color-picker\t(index.html)"
+			],
+			[
+				"colr",
+				"color-picker\t(index.html)"
+			],
+			[
+				"mo",
+				"mousedown"
+			],
+			[
+				"mouse",
+				"mouseDown"
+			],
+			[
+				"sav",
+				"save-img\t(index.html)"
+			],
+			[
+				"sty",
+				"style\t(flappy.html)"
+			],
+			[
+				"full",
+				"fullscreen\t(perkusV1.1.0.0.js)"
+			],
+			[
+				"ful",
+				"fullscreen\t(perkusV1.1.0.0.js)"
+			],
+			[
+				"cord",
+				"cords"
+			],
+			[
+				"move",
+				"moveTo"
+			],
+			[
+				"mov",
+				"moveLine"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"fu",
+				"fullscreen\t(script.js)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 389.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 412.0,
+		"history":
+		[
+			"a",
+			"print(a);",
+			"print('d');",
+			"print",
+			"a",
+			"a = a + a",
+			"a + a = a",
+			"a++",
+			"a",
+			"a = 2;",
+			"1+1=2",
+			"1+1",
+			"'s'",
+			"s",
+			"['path']",
+			"[path]",
+			"{}",
+			"dd",
+			"open .exe",
+			"open",
+			"?",
+			"help",
+			"ok_cancel_dialog('hi')",
+			"git clone https://github.com/alienhard/SublimeAllAutocomplete",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"0",
+			"= 0",
+			"var",
+			"var a = 0",
+			"()",
+			"de"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/bird race"
+	],
+	"file_history":
+	[
+		"/C/Users/eric/Documents/code1/code2/canvas/flappy/flappy.js",
+		"/F/bird race/erklib/grid-birdRace.css",
+		"/F/bird race/main.html",
+		"/F/bird race/erklib/perkus-birdRace.js",
+		"/F/bird race/main.css",
+		"/F/bird race/main.js",
+		"/C/Users/eric/Documents/code1/code2/code3mini/tester.html",
+		"/F/drawing/draw.html",
+		"/F/bird race/images/bird/bird-flying.png",
+		"/F/bird race/images/bird/bird-flying-open.png",
+		"/F/bird race/images/bird/bird-walking.png",
+		"/F/bird race/images/bird/bird-walking-open.png",
+		"/F/bird race/code/css/main.css",
+		"/F/drawing/changelog.html",
+		"/F/drawing/grid.css",
+		"/C/Users/eric/Google Drive/code for shtench/parameter.html",
+		"/F/drawing/changlog.html",
+		"/F/erklib/perkusv1.2.0.js",
+		"/F/erklib/grid.css",
+		"/C/Users/eric/Google Drive/code/old/canvas/brush teeth/script.js",
+		"/F/fonts/sheets/comic-sans.css",
+		"/C/Users/eric/Google Drive/code/old/canvas/bsketball/script.js",
+		"/C/Users/eric/Google Drive/code/old/canvas/bsketball/style.css",
+		"/F/drawing/logog.png",
+		"/C/Users/eric/Google Drive/code/old/canvas/drawing/draw.html",
+		"/F/fonts/sheets/comic sans.css",
+		"/F/fonts/sheets/comic sans",
+		"/C/Users/eric/Google Drive/code/old/index.html",
+		"/C/Users/eric/cs code/erks stuf/main.c",
+		"/C/Users/eric/Music/iTunes/iTunes Media/Downloads/Star Wars_ The Force Awakens _ J.J..tmp/Info.plist",
+		"/C/Users/eric/AppData/Local/Google/Drive/user_default/com.google.drive.nativeproxy.json",
+		"/F/erklib/Erklib tester.html",
+		"/F/erklib/perkusV1.1.0.0.js",
+		"/F/canvas/drawing/draw.html",
+		"/F/erklib/perkus.js",
+		"/C/Users/eric/Google Drive/code/draw/v 0.1.0/draw.html",
+		"/F/canvas/bsketball/index.html",
+		"/F/newclickgame/grid.css",
+		"/F/index.html",
+		"/F/css/main.css",
+		"/F/code 3/System Volume Information/IndexerVolumeGuid",
+		"/F/code/erklib/js/v1.0.0.0/Erklib tester.html",
+		"/E/canvas/drawing/v1.0.0.css",
+		"/E/canvas/drawing/v1.0.0",
+		"/E/canvas/drawing/v1.0.0.html",
+		"/F/code/code 3/obj1.js",
+		"/F/New folder/erklib/js/v1.0.0.0/perkus.js",
+		"/F/New folder/erklib/js/v1.0.0.0/erklibtest.css",
+		"/F/New folder/erklib/js/v1.0.0.0/Erklib tester.html",
+		"/F/code/code 3/erklib/erklibtest.css",
+		"/F/code/code 3/music man.js",
+		"/F/code/code 3/grid.css",
+		"/F/code/code 3/testedddd.js",
+		"/F/code/code 3/HTML.sublime-completions",
+		"/F/code/code 3/css1css.css",
+		"/F/code/code 3/note.js",
+		"/E/erklib/grid.css",
+		"/E/canvas/bsketball/index.html",
+		"/E/canvas/bsketball/style.css",
+		"/E/erklib/perkusV1.1.0.0.js",
+		"/E/canvas/bsketball/script.js",
+		"/E/canvas/flappy/flappy.html",
+		"/E/vidio player/style.css",
+		"/E/vidio player/index.html",
+		"/E/vidio player/script.js",
+		"/E/canvas/2P gme/main.js",
+		"/E/erklib/erklib V 1.1.0.0.html",
+		"/E/canvas/2P gme/2P game.html",
+		"/E/erklib/perkus.js",
+		"/E/canvas/brush teeth/style.css",
+		"/C/Users/eric/Documents/code1/code2/erklib/javascript/main/perkus.js",
+		"/C/Users/eric/Desktop/rasberry pi/NOOBS_v2_4_5/os/Raspbian/root.tar.xz",
+		"/C/Users/eric/Documents/code1/code2/code3mini/perkusV1.1.0.0.js",
+		"/C/Users/eric/Desktop/rasberry pi/NOOBS_v2_4_5/os/Raspbian/partitions.json",
+		"/C/Users/eric/AppData/Local/Microsoft/Windows/Themes/Undersea/Undersea.theme",
+		"/C/Users/eric/AppData/Roaming/Sublime Text 3/Packages/User/html5.sublime-snippet",
+		"/C/Users/eric/Documents/code1/code2/canvas/2P gme/main.js",
+		"/E/things that erkus perkus VERY GREATLY gave you from the heavens of my own pc/crashTo function.js",
+		"/C/Users/eric/AppData/Roaming/Sublime Text 3/Packages/User/erklib.sublime-snippet",
+		"/C/Users/eric/AppData/Roaming/Sublime Text 3/Packages/User/iffe.sublime-snippet",
+		"/E/canvas/new 2P/new 2p.html",
+		"/E/canvas/brush teeth/main.html",
+		"/E/canvas/brush teeth/script.js",
+		"/E/canvas/new 2P/js.js",
+		"/E/erklib/perkus.min.js",
+		"/E/canvas/tile game/style.css",
+		"/E/canvas/tile game/index.html",
+		"/E/canvas/tile game/script.js",
+		"/C/Users/eric/AppData/Roaming/.minecraft/versions/1.12.2/1.12.2.json",
+		"/E/newclickgame/newmain.css",
+		"/E/newclickgame/grid.css",
+		"/C/Program Files/WindowsApps/Microsoft.MinecraftUWP_1.2.1360.0_x64__8wekyb3d8bbwe/data/renderer/overworld/renderoptions.json",
+		"/C/Program Files/WindowsApps/Microsoft.MinecraftUWP_1.2.1360.0_x64__8wekyb3d8bbwe/data/definitions/recipe/bow.json",
+		"/C/Program Files/WindowsApps/Microsoft.MinecraftUWP_1.2.1360.0_x64__8wekyb3d8bbwe/data/definitions/recipe/birch_stairs.json",
+		"/C/Users/eric/Desktop/minecraft stuf/AppxBlockMap.xml",
+		"/C/Users/eric/AppData/Local/Temp/Temp1_vanilla.zip/behavior_trees/cooked_chicken_test.json",
+		"/C/Users/eric/AppData/Local/Temp/Temp1_vanilla.zip/behavior_trees/walk_forward.json",
+		"/C/Users/eric/AppData/Local/Temp/Temp1_vanilla.zip/manifest.json",
+		"/C/Users/eric/AppData/Local/Temp/Temp1_vanilla.zip/items.json",
+		"/C/Users/eric/AppData/Local/Temp/Temp1_vanilla.zip/entities/arrow.json",
+		"/E/java/idk.java",
+		"/E/coding page/index.html",
+		"/E/erklib/erklibtest.css",
+		"/C/Users/eric/AppData/Roaming/Sublime Text 3/Packages/User/cplus.json",
+		"/C/Users/eric/AppData/Roaming/Sublime Text 3/Packages/User/erklib result.sublime-snippet",
+		"/E/erklib/Erklib tester.html",
+		"/C/Users/eric/AppData/Roaming/Sublime Text 3/Packages/User/arrow function.sublime-snippet",
+		"/C/Users/eric/Documents/code1/libErk/main.js",
+		"/E/canvas/2P gme/vars.js",
+		"/C/Users/eric/Desktop/js game 1/js game 1.js",
+		"/E/vidio player/script",
+		"/E/vidio player/index",
+		"/C/Program Files/Sublime Text 3/sublime.py",
+		"/E/vidio player/style",
+		"/E/erklib/javascript/main/grid.css",
+		"/E/erklib/javascript/main/erklibtest.css",
+		"/C/Users/eric/Documents/code1/code2/erklib/javascript/main/Erklib tester.asp",
+		"/E/erklib/javascript/main/perkus.js",
+		"/E/random js/geolocation.html",
+		"/E/erklib/javascript/main/Erklib tester.asp",
+		"/C/Users/eric/AppData/Roaming/Sublime Text 3/Packages/User/erklib preline.sublime-snippet",
+		"/E/erklib/javascript/main/Erklib tester.html",
+		"/C/Users/eric/AppData/Roaming/Sublime Text 3/Packages/User/examples.sublime-snippet",
+		"/C/Users/eric/Documents/code1/code2/erklib/javascript/main/Erklib tester.html",
+		"/C/Users/eric/Documents/code1/code2/erklib/javascript/main/grid.css",
+		"/C/Users/eric/Documents/code1/code2/erklib/javascript/main/erklibtest.css",
+		"/C/Users/eric/Documents/code1/code2/newclickgame/grid.css",
+		"/C/Users/eric/Documents/code1/code2/css/main.css"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\tbird.update();",
+			"@import url('https://fonts.googleapis.com/css?family=Quicksand');\n* {\n\tbox-sizing: border-box;\n}\n.row::after {\n\tcontent: '';\n\tclear: both;\n\tdisplay: table;\n}\n[class*=col-] {\n\tfloat: left;\n\tpadding: 15px;\n\tborder: 1px solid black;\n}\n.switch {\n\tposition: relative;\n\tdisplay: inline-block;\n\twidth: 60px;\n\theight: 34px;\n}\n.swicth input {\n\tdisplay: none;\n}\n.slider {\n\tposition: absolute;\n\tcursor: pointer;\n\tborder-radius: 36px;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\tbackground-color: red;\n\t-webkit-transition: .4s;\n\ttransition: .4s;\n}\n.slider:before {\n\tposition: absolute;\n\tcontent: \"\";\n\theight: 26px;\n\twidth: 26px;\n\tleft: 4px;\n\tbottom: 4px;\n\tbackground-color: white;\n\tborder-radius: 50%;\n\t-webkit-transition: .4s;\n\ttransition: .4s;\n}\ninput:checked + .slider {\n\tbackground-color: lime;\n}\ninput:checked + .slider::before {\n\tbackground-color: white;\n}\ninput:checked + .slider:before {\n\t-webkit-transform: translateX(26px);\n\t-ms-transform: translateX(26px);\n\ttransform: translateX(26px);\n}\n.head {\n\tbackground-color: skyblue;\n\tcolor: white;\n\ttext-align: center;\n\tpadding: 15px;\n}\n.menu ul {\n\tlist-style-type: none;\n\tmargin: 0;\n\ttext-align: center;\n\tpadding: 0;\n}\n.menu li {\n\tborder-radius: 10px;\n\tpadding: 8px;\n\tmargin-bottom: 7px;\n\tbackground-color: skyblue;\n\tcolor: white;\n\tbox-shadow: 0 0 1px black, 0 0 3px grey;\n}\n.aside {\n\ttext-align: center;\n\tbackground-color: skyblue;\n\tcolor: white;\n}\n.aside h1, h2, h3, h4, h5, h6 {\n\tfont-family: 'Quicksand', sans-serif;\n}\n.aside ul {\n\tlist-style-type: circle;\t\n}\n.foot {\n\tpadding: 15px;\n\tborder-radius: 10px;\n\tbackground-color: skyblue;\n\ttext-align: center;\n\tcolor: white;\n}\n.cen {text-align: center;}\n.left {text-align: left;}\n.right {text-align: right;}\n[class*=\"col-\"] {\n\twidth: 100%;\n}\n@media only screen and (min-width: 600px) {\n\t.col-s-1 {width: 8.33%;}\n\t.col-s-2 {width: 16.66%;}\n\t.col-s-3 {width: 25%;}\n\t.col-s-4 {width: 33.33%;}\n\t.col-s-5 {width: 41.66%;}\n\t.col-s-6 {width: 50%;}\n\t.col-s-7 {width: 58.33%;}\n\t.col-s-8 {width: 66.66%;}\n\t.col-s-9 {width: 75%;}\n\t.col-s-10 {width: 83.33%;}\n\t.col-s-11 {width: 91.66%;}\n\t.col-s-12 {width: 100%;}\n}\n@media only screen and (min-width: 768px) {\n\t.col-1 {width: 8.33%;}\n\t.col-2 {width: 16.66%;}\n\t.col-3 {width: 25%;}\n\t.col-4 {width: 33.33%;}\n\t.col-5 {width: 41.66%;}\n\t.col-6 {width: 50%;}\n\t.col-7 {width: 58.33%;}\n\t.col-8 {width: 66.66%;}\n\t.col-9 {width: 75%;}\n\t.col-10 {width: 83.33%;}\n\t.col-11 {width: 91.66%;}\n\t.col-12 {width: 100%;}\n}",
+			"brush.shadow",
+			"shadow-mode",
+			"y",
+			"img",
+			".brush-controls",
+			"Version",
+			"c.closePath();",
+			" - brush.size",
+			"confirmationMessage",
+			"*",
+			"* ",
+			"h1",
+			"canvas",
+			"closePath",
+			"true",
+			"logog",
+			"mousedown",
+			"grab",
+			" ==",
+			"  ",
+			"('/fonts/comic.ttf'",
+			" && doc.getElementById",
+			"window",
+			"window.document",
+			"$",
+			"document",
+			">\n",
+			"}\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 185.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 157.0
+	},
+	"output.find_results":
+	{
+		"height": 208.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 121.0
+	},
+	"pinned_build_system": "",
+	"project": "birdRace.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"vars.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 358.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 357.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

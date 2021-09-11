@@ -1,0 +1,117 @@
+{
+    "NoSelectError": {
+        "title": "Unable to transform; no selection",
+        "content": "Select something to transform it",
+        "inputs":[],
+        "buttons":[
+            {
+                "args": {},
+                "title": "Cancel",
+                "action": "Project.MessageBox.hide"
+            }
+        ]
+    },
+    "ResizeCanvases": {
+        "title":"Resize Canvas",
+        "content": "Resize Canvas (px)",
+        "inputs": [
+            {
+                "name": "width",
+                "content": "Width:",
+                "value": "900",
+                "type":"number"
+                
+            },
+            {
+                "name": "height", 
+                "content": "Height:",
+                "value": "900",
+                "type": "number"
+            }
+        ],
+        "buttons":[
+            {
+                "args":{},
+                "title":"Cancel",
+                "action":"Project.MessageBox.hide"
+            },
+            {
+                "args": {},
+                "title": "Ok",
+                "action": "Project.Canvas.resizeConfirmed"
+            }
+        ]
+    },
+    "NewLayer": {
+        "title": "New Layer",
+        "content": "Create a new layer.",
+        "inputs": [
+            {
+                "name": "name",
+                "content": "Name: ",
+                "value": "Layer",
+                "type": "textarea"
+            }
+        ],
+        "buttons": [
+            {
+                "args": {},
+                "title": "Cancel",
+                "action": "Project.MessageBox.hide"
+            },
+            {
+                "args": {},
+                "title": "Ok",
+                "action": "Project.Layers.addLayer"
+            }
+        ]
+    },
+    "RenameLayer": {
+        "title": "Rename Layer",
+        "content": "",
+        "inputs": [
+            {
+                "name": "name",
+                "content": "Name: ",
+                "value": "Layer",
+                "type": "textarea"
+            }
+        ],
+        "buttons": [
+            {
+                "title": "Cancel",
+                "action": "Project.MessageBox.hide",
+                "args": {}
+            },
+            {
+                "args": {},
+                "title": "Ok",
+                "action": "Project.Layers.renameLayerConfirmed"
+            }
+        ]
+    },
+    "OneLayerError": {
+        "title": "Error",
+        "content": "Unable to delete the background layer. There must be at least one layer in the project.",
+        "inputs": [],
+        "buttons": [
+            {
+                "title": "Cancel",
+                "args": {},
+                "action": "Project.MessageBox.hide"
+            }
+        ]
+    },
+    "SelectionEmptyError": {
+        "title": "Error",
+        "content": "The selection is empty.",
+        "inputs": [],
+        "buttons": [
+            {
+                "title": "Cancel",
+                "args": {},
+                "action": "Project.MessageBox.hide"
+            }
+        ]
+    }
+}

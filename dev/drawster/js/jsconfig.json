@@ -1,0 +1,9 @@
+{
+  "include": [
+    "js/**/*.js"
+  ],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+}

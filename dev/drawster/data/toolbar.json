@@ -1,0 +1,111 @@
+[
+    {
+        "name": "File",
+        "type": "dropdown",
+        "content": [
+            {
+                "name": "New",
+                "action": "Project.Editor.clear",
+                "type": "button"
+            },
+            {
+                "name": "Open",
+                "action": "Project.Editor.open",
+                "type": "button"
+            },
+            {
+                "name": "Save",
+                "action": "Project.Editor.save",
+                "type": "button"
+            },
+            {
+                "name": "Save As",
+                "action": "Project.Editor.saveAs",
+                "type": "button"
+            }
+        ]
+    },
+    {
+        "name": "View",
+        "type": "dropdown",
+        "content": [
+            {
+                "name": "Zoom > ",
+                "type": "dropdown",
+                "content": [
+                    {
+                        "name": "Zoom In",
+                        "type": "button",
+                        "action": "Project.Editor.zoomIn"
+                    },
+                    {
+                        "name": "Zoom Out",
+                        "type": "button",
+                        "action": "Project.Editor.zoomOut"
+                    },
+                    
+                    {
+                        "name": "Reset Zoom",
+                        "type": "button",
+                        "action": "Project.Editor.resetZoom"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name":"Canvas",
+        "type":"dropdown",
+        "content":[
+            {
+                "name":"Resize Canvas",
+                "type":"button",
+                "action":"Project.Canvas.resize"
+            }
+        ]
+    },
+    {
+        "name": "Layer",
+        "type": "dropdown",
+        "content": [
+            {
+                "name": "Add New Layer",
+                "type": "button",
+                "action": "Project.Layers.addLayerGUI"
+            },
+            {
+                "name": "Copy Layer",
+                "type": "button",
+                "action": "alert"
+            },
+            {
+                "name": "Merge Layers",
+                "type": "button",
+                "action": "alert"
+            }
+        ]
+    },
+    {
+        "name": "Selection",
+        "type": "dropdown",
+        "content": [
+            {
+                "name": "Deselect",
+                "type": "button",
+                "action": "Project.Draw.restore"
+            }
+        ]
+    },
+    {
+        "name": "Other Links",
+        "type": "dropdown",
+        "content":
+        [
+            {
+                "name": "Domain Home Page",
+                "type": "link",
+                "href": "/gm/index.html"
+            }
+        ]
+    }
+]

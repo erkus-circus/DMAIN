@@ -1,0 +1,136 @@
+{
+    "start": {
+        "title": "Welcome",
+        "content": "Welcome to PurpleChat. If you already have an account, press login. If not, sign up for one.",
+        "inputs":[],
+        "buttons":[
+            {
+                "title": "Sign Up",
+                "action": "showSignupScreen",
+                "args": {}
+            },
+            {
+                "args": {},
+                "title": "Login",
+                "action": "showLoginScreen"
+            }
+        ]
+    },
+    "login": {
+        "title": "Login",
+        "content": "Log in with you username and password.",
+        "inputs": [
+            {
+                "name": "username",
+                "content": "Username: ",
+                "attributes": {
+                    "maxlength": 20
+                },
+                "value": "",
+                "type":"textarea"
+            },
+            {
+                "name": "password",
+                "content": "Password: ",
+                "value": "",
+                "type":"password"
+            }
+        ],
+        "buttons": [
+            {
+                "title": "Go Back",
+                "action": "showStart",
+                "args": {}
+            },
+            {
+                "args": {},
+                "title": "Login",
+                "action": "loginSubmit"
+            }
+        ]
+    },
+    "signup": {
+        "title": "Sign Up",
+        "content": "Sign up for a lucid detroit account. Your username may only contain numbers and letters, up to 20 characters. Your password must be at least 8 characters long. I do not reccomend using your normal password, as these passwords are not hashed. I will hash passwords soon, just not yet.",
+        "inputs": [
+            {
+                "name": "username",
+                "content": "Username: ",
+                "value": "",
+                "attributes": {
+                    "maxlength": 20
+                },
+                "type":"textarea"
+            },
+            {
+                "name": "fullname",
+                "content": "Full Name: ",
+                "attributes": {
+                    "maxlength": 20
+                },
+                "value": "",
+                "type":"textarea"
+            },
+            {
+                "name": "email",
+                "content": "email: ",
+                "value": "",
+                "type":"textarea"
+            },
+            {
+                "name": "password",
+                "content": "Password: ",
+                "value": "",
+                "type":"password"
+            },
+            {
+                "name": "password2",
+                "content": "Re-enter password: ",
+                "value": "",
+                "type":"password"
+            }
+        ],
+        "buttons": [
+            {
+                "title": "Go Back",
+                "action": "showStart",
+                "args": {}
+            },
+            {
+                "args": {},
+                "title": "Sign Up",
+                "action": "signupSubmit"
+            }
+        ]
+    },
+    "newChat": {
+        "title": "Create new chat",
+        "content": "Users added:",
+        "inputs":[
+            {
+                "name": "users",
+                "content": "Add user: ",
+                "value": "",
+                "options": [
+                ],
+                "attributes": {
+                    "list": "users-list"
+                },
+                "type":"datalist"
+            }
+        ],
+
+        "buttons":[
+            {
+                "title": "Cancel",
+                "action": "MessageBox.hide",
+                "args": {}
+            },
+            {
+                "args": {},
+                "title": "Create",
+                "action": "createChat"
+            }
+        ]
+    }
+}

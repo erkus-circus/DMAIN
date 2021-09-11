@@ -1,0 +1,22 @@
+.layer-canvas {
+    border: 1px solid black;
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    left: 50%;
+    width: 500px;
+    margin: auto;
+}
+
+.all-canvases {
+    z-index: 0;
+    color: white;
+    cursor: none;
+    display: block;
+    padding: 0;
+}
+
+.top-canvas {
+    z-index: 99;
+    background-color: transparent;
+}

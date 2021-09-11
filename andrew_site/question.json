@@ -1,0 +1,316 @@
+[
+    {
+        "title": "Get a question wrong it restarts! At the end a gift is bestowed upon you. You get 42 tries to win",
+        "options": [
+            "Lets go!",
+            "Eric is awesome and he cannot wait to bully andrew when quarantine is over",
+            "SHART"
+        ],
+        "to": "#",
+        "correct": 2
+    },
+    {
+        "title": "Did you just lose the game?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "Who do you think will win the Roast Championship?",
+        "options": [
+            "Eric",
+            "Andrew",
+            "Neither"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "What number am I thinking of?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "If you pay for the whole spedometer, should u use the whole spedometer?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "Did you just lose the game again?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "Did you sleep with urself last night?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "Whats the square root of seven times the factorial of 32?",
+        "options": [
+            "0",
+            "Eric dosent give a fuck to actually solve this for you",
+            "954235.234624234...",
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "Do you like the background?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "What question is this?",
+        "options": [
+            "Yes",
+            "No",
+            "10",
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "-3",
+            "-7",
+            "2",
+            "1",
+            "0",
+            "42*sqrt(78.6789)",
+            "-1",
+            "69",
+            "420",
+            "How many options are there here?"
+        ],
+        "to": "#",
+        "correct": 8
+    },
+    {
+        "title": "How many options were on the last question?",
+        "options": [
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "22",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23",
+            "23"
+        ],
+        "to": "#",
+        "correct": 4
+    },
+    {
+        "title": "Did you sleep with urself last night?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "Did Ashten say he hit a stick at 5/16/20/0/0/0/0/0//00//00//0/0/00/0 at 4:57PM?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "Is your profession doing slither.io?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "How many Yes answeres have their been?",
+        "options": [
+            "IDFK",
+            "IDK",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "13",
+            "14",
+            "147",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14"
+        ],
+        "to": "#",
+        "correct": 22
+    },
+    {
+        "title": "Is your profession doing slither.io?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "Is your profession doing slither.io?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "Is your profession doing slither.io?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "Do u are have the big gae?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "Are you a fat fuck?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "Are you a dumb human?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "So if ur not dumb, and ur IQ is -47, your not dumb, ur dumber than dumb!",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "U are a human?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 1
+    },
+    {
+        "title": "Are you get attack by rabid DIEM?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "to": "#",
+        "correct": 0
+    },
+    {
+        "title": "asdfjkl?",
+        "options": [
+            ";"
+        ],
+        "to": "#",
+        "correct": 0
+    }
+]

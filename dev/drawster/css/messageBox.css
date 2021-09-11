@@ -1,0 +1,78 @@
+.outer-msg-box {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    height: 100%;
+    font-size: x-large;
+}
+
+[class^=msg-box] {
+    padding: 6px;
+    text-align: center;
+}
+
+.msg-input {
+    display: block;
+}
+
+.msg-box {
+    background-color: rgb(32, 32, 32);
+    width: fit-content;
+    color: white;
+    max-width: 25%;
+    display: block;
+    margin: 15% auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.msg-inputs input {
+    font-size: x-large;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.msg-title {
+    background-color: rgb(95, 95, 95);
+    width: 100%;
+    padding: 5px 0;
+    font-size: xx-large;
+    font-weight: bold;
+    display: block;
+}
+
+.msg-content {
+    padding: 1px;
+    text-align: center;
+    display: block;
+    padding-top: 17px;
+    overflow-wrap: normal;
+    margin: 5px auto;
+}
+
+.msg-btns {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 17px;
+    width: max-content;
+}
+
+.msg-btn {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.msg-btn:hover {
+    background: grey;
+}
+
+.msg-btn:active {
+    background: lightgrey;
+}

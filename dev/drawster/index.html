@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <title>Drawster - Lucid Detroit</title>
+
+    <meta name="Description" content="Drawster Dev Build. Drawing similar to Photoshop with software photo-editing.">
+
+    <link rel="stylesheet" href="build/build.css">
+    <!--For initializing window.Project for prototyping-->
+    <script src="build/__init.js"></script>
+    <script src="build/lib.js"></script>
+</head>
+
+<body>
+    <script src="build/editor.js"></script>
+    <script src="build/tools.js"></script>
+    <div class="nav-bar"></div>
+    <div class="content">
+        <!-- The floating selector box -->
+        <div class="selector-box selector-box-main" title="Menu">
+            &bull;
+            <div class="selector-box-sections"></div>
+            <div class="selector-box-menu selector-box"></div>
+            <div class="selector-box-menu-sections">
+            </div>
+        </div>
+
+        <!-- The layer editor -->
+        <div class="layer-editor-wrapper">
+            <div class="sidebar right layer-editor clearfix">
+        </div>
+        </div>
+        <!-- All the canvases -->
+        <div class="all-canvases">
+            <div class="bottom-canvases"></div>
+            <div class="canvases"></div>
+            <div class="draw-canvases"></div>
+            <div class="top-canvases"></div>
+        </div>
+
+
+    </div>
+
+    <!-- For messages -->
+    <div class="outer-msg-box">
+        <div class="msg-box">
+            <span class="msg-title"></span>
+            <div class="msg-content"></div>
+            <div class="msg-inputs"></div>
+            <div class="msg-btns"></div>
+        </div>
+    </div>
+
+    <script src="build/init__.js"></script>
+</body>
+</html>

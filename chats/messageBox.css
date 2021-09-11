@@ -1,0 +1,117 @@
+/*
+Color Palatte:
+backgrounds:
+rgba(0, 0, 0, .5)
+rgb(32, 32, 32)
+rgb(95, 95, 95);
+*/
+
+* {
+    border-radius: 8px;
+}
+
+input, button {
+    outline: none;
+}
+
+.outer-msg-box {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    height: 100%;
+    font-size: x-large;
+}
+
+[class^=msg-box] {
+    padding: 6px;
+    text-align: center;
+}
+
+.msg-input {
+    display: block;
+    /* text-align: left; */
+    margin-right: 10%;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.msg-box {
+    background-color: rgb(25, 17, 70);
+    border-radius: 8px;
+    width: fit-content;
+    color: rgb(194, 182, 182);
+    width: 50%;
+    display: block;
+    margin: 5% auto;
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+.msg-inputs input {
+    font-size: x-large;
+    background-color: rgb(9, 26, 44);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    color: rgb(194, 182, 182);
+}
+
+.msg-title {
+    background-color: rgb(20, 17, 66);
+    width: 100%;
+    padding: 5px 0;
+    font-size: xx-large;
+    font-weight: bold;
+    display: block;
+}
+
+.msg-content {
+    padding: 1px;
+    text-align: center;
+    display: block;
+    margin-top: 17px;
+    font-size: large;
+    overflow-wrap: normal;
+    margin: 5px auto;
+    background-color: rgb(102, 35, 165);
+}
+
+.msg-btns {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 17px;
+    width: max-content;
+}
+
+.msg-btn:disabled {
+    background-color: rgb(45, 36, 59);
+    cursor: auto;
+}
+
+
+.msg-btn {
+    display: inline-block;
+    background-color: rgb(46, 16, 90);
+    margin: 0 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(194, 182, 182);
+    border: 1px solid rgb(194, 182, 182);
+}
+
+.msg-btn:hover:enabled {
+    background: rgb(72, 25, 143);
+}
+
+.msg-btn:active {
+    background: rgb(128, 53, 240);
+}

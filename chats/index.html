@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PurpleMessage - Accounts & DMS In the Works!</title>
+        <link rel="stylesheet" href="./messageBox.css">
+        <link rel="stylesheet" href="./messages.css">
+        <script src="/js/lib/_erklib.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="./messageBox.js"></script>
+    </head>
+    <body>
+        <!-- Taken from drawster -->
+        <div class="outer-msg-box">
+            <div class="msg-box">
+                <span class="msg-title"></span>
+                <div class="msg-content"></div>
+                <div class="msgbox-inputs msg-inputs"></div>
+                <div class="msg-btns"></div>
+            </div>
+        </div>
+        
+        <div class="side-btns">
+            <button id="logOutButton" class="msg-btn side-button">Log Out</button>
+            <a href="/gm/chats/newChat.html"><button id="newChatButton" class="msg-btn side-button">Dev Build</button></a>
+        </div>
+        
+        
+        <div id="messages"></div>
+
+        <form id="message-form" action="javascript:void(0);" autocomplete="off">
+            <input type="text" class="msg-inputs" placeholder="PurpleMessage" id="message-input" />
+            <button id="send-message" class="msg-btn" type="submit">Send!</button>
+        </form>
+        
+        <div id="peopleOnlineDisplay"></div>
+
+        <div id="nameDisplay"></div>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./account.js"></script>
+        <script src="./chat.js"></script>
+    </body>
+</html>
